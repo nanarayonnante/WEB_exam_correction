@@ -90,17 +90,46 @@
 }
 
 /*FOLDED HANDS*/
-<FontAwesomeIcon icon="fa-solid fa-hands-praying" />
+
 
 /*DISPLAY NONE*/
 
 /*ARRIERE PLAN*/
+.background-image {
+    background-image: url('../images/backgrounds/subventions.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10%;
+   
+}
 
 /*FILIGRANE*/
 
 /*CENTRER TABLEAU*/
+table {
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+
+table td {
+    padding: 0.75em 0.75em;
+}
+
+table th {
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 0 0.75em 0.75em 0.75em;
+    text-align: center;
+}
 
 /*QUADRILLAGE TABLEAU*/
+
+table thead th, tbody tr{
+    border: solid 3px;
+    border-color: darkblue;
+    border-style: dotted;
+}
 
 /*TITRE TABLEAU*/
 .font-fugaz-one-regular {
@@ -110,10 +139,14 @@
   text-shadow: 1px 3px rgb(53, 57, 252)
 }
 
-
-/*OMBRE PORTEE*/
-
 /*LIGNE SURVOLEE*/
+tbody tr:hover {
+    background-color: dodgerblue;
+}
+
+tbody tr td:hover{
+    background-color: lightblue;
+}
 
 
 
