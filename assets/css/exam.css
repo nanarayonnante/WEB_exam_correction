@@ -66,18 +66,62 @@
     text-align: center;
   }
 
-  /*FOCUS*/
+  /*FOCUS ET SURVOL*/
   input:focus {
     background-color: rgb(223, 223, 139);
     width: 250px;
 }
+.formulaire select:hover {
+    background-color: rgb(223, 223, 139);
+    color: black;
+}
+.formulaire input:hover {
+    background-color: rgb(223, 223, 139);
+    color: black;
+}
+.formulaire textarea:hover {
+    background-color: rgb(223, 223, 139);
+    color: black;
+}
 
-input:oninvalid {
-  background-color: rgb(223, 139, 198);
-  width: 250px;
+ /*CHAMP INVALIDE*/
+ .formulaire input:not(:valid) {
+    background-color: pink;
+}
+
+/*FOLDED HANDS*/
+<FontAwesomeIcon icon="fa-solid fa-hands-praying" />
+
+/*DISPLAY NONE*/
+
+/*ARRIERE PLAN*/
+
+/*FILIGRANE*/
+
+/*CENTRER TABLEAU*/
+
+/*QUADRILLAGE TABLEAU*/
+
+/*TITRE TABLEAU*/
+.font-fugaz-one-regular {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 1px 3px rgb(53, 57, 252)
 }
 
 
+/*OMBRE PORTEE*/
+
+/*LIGNE SURVOLEE*/
 
 
-  display: none;
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fugaz+One&display=swap');
+
