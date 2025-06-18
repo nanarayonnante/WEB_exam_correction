@@ -87,9 +87,9 @@
                                             <label for="genre">Genre</label>
                                             <select id="genre" name="genre" required>
                                                 <option value="">- Sélectionner -</option>
-                                                <option value="madame">Madame</option>
-                                                <option value="monsieur">Monsieur</option>
-                                                <option value="autre">Autre</option>
+                                                <option value="f">Madame</option>
+                                                <option value="h">Monsieur</option>
+                                                <option value="x">Autre</option>
                                                 <option value="prefereNePasDire">Je préfère ne pas le dire</option>
                                             </select>
                                         </div>
@@ -103,8 +103,7 @@
 
                                         <div class="field">
                                             <label for="name">Nom du parrain/de la marraine:</label>
-                                            <input type="text" id="name" name="name" value="Nom" required
-                                                oninvalid="alert('You must fill out the form!');">
+                                            <input type="text" id="name" name="name" value="Nom" required>
                                         </div>
 
                                         <div class="field">
@@ -116,12 +115,12 @@
                                         <!--FORMULAIRE RADIO-->
                                         <div class="field">
                                             <label>Montant mensuel du soutien:</label>
-                                            <input type="radio" id="cinq" name="faible-montant" value="5">
-                                            <label for="cinq">5€</label><br>
-                                            <input type="radio" id="quinze" name="average-montant" value="15">
-                                            <label for="quinze">15€</label><br>
-                                            <input type="radio" id="vingt" name="eleve-montant" value="20">
-                                            <label for="vingt">20€</label>
+                                            <input type="radio" id="cinq" name="montant" value="5">
+                                            <label for="faible-montant">5€</label><br>
+                                            <input type="radio" id="quinze" name="montant" value="15">
+                                            <label for="average-montant">15€</label><br>
+                                            <input type="radio" id="vingt" name="montant" value="20">
+                                            <label for="eleve-montant">20€</label>
                                         </div>
 
 
@@ -145,7 +144,7 @@
                                         <!--ZONE DE TEXTE MULTILIGNES-->
                                         <div class="field">
                                                     <label for="commentaire">Commentaire</label>
-                                                    <textarea name="commentaire" id="commentaire" rows="3"></textarea>
+                                                    <textarea name="commentaire" id="commentaire" cols="60" rows="3"></textarea>
                                         </div>
 
 
