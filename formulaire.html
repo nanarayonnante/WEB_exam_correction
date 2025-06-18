@@ -5,215 +5,298 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="fr">
-
-<head>
+  <head>
     <!-- GOOGLE FONT -->
     <script>
-        tarteaucitron.user.googleFonts = 'families';
-        (tarteaucitron.job = tarteaucitron.job || []).push('googlefonts');
+      tarteaucitron.user.googleFonts = "families";
+      (tarteaucitron.job = tarteaucitron.job || []).push("googlefonts");
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap");
     </style>
 
     <title>Formulaire de parrainage</title>
     <meta charset="utf-8">
     <meta name="author" content="D. Charline">
     <meta name="description" content="tarrifs">
-    <meta name="keywords" content="film festival, film festival bruxelles, open air bruxelles">
+    <meta
+      name="keywords"
+      content="film festival, film festival bruxelles, open air bruxelles">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/exam.css">
     <link rel="icon" type="image/x-icon" href="images/Festyjust.png">
     <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css">
+      <link rel="stylesheet" href="assets/css/noscrip2t.css">
     </noscript>
-</head>
+  </head>
 
-<body class="is-preload">
+  <body class="is-preload">
     <!-- Wrapper -->
     <div id="wrapper">
-        <!-- Header -->
-        <header id="header" class="alt">
-            <a href="homepage.html"><img src="images/Festyjust.png" alt="logo"></a>
-            <a href="homepage.html" class="logo"><strong>Festyjust</strong> <span>Edition été 2025</span></a>
+      <!-- Header -->
+      <header id="header" class="alt">
+        <a href="homepage.html"
+          ><img src="images/Festyjust.png" alt="logo"></a>
+        <a href="homepage.html" class="logo"
+          ><strong>Festyjust</strong> <span>Edition été 2025</span></a
+        >
 
-            <nav>
-                <a href="#menu">Menu</a>
-            </nav>
-        </header>
-
-        <!-- Menu -->
-        <nav id="menu">
-            <ul class="links">
-                <li><img src="images/logo.png" alt="logo"></li>
-                <li><a href="homepage.html">Accueil</a></li>
-                <li><a href="aspects-pratiques.html">Aspects pratiques</a></li>
-                <li><a href="a-propos-de-nous.html">A propos de nous</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-                <li><a href="formulaire.html">Formulaire de parainage</a></li>
-                <li><a href="subventions.html">Subventions</a></li>
-            </ul>
-            <ul class="actions stacked">
-                <li><a href="programme.html" class="button primary fit" target="_blank">Programme</a></li>
-                <li><a href="ticket.html" class="button fit">Acheter des tickets</a></li>
-            </ul>
+        <nav>
+          <a href="#menu">Menu</a>
         </nav>
+      </header>
 
-        <!-- Main -->
-        <div id="main" class="alt">
-            <!-- One -->
-            <section id="one">
-                <div class="inner">
-                    <div id="breadcrumbs-exam">
+      <!-- Menu -->
+      <nav id="menu">
+        <ul class="links">
+          <li><img src="images/logo.png" alt="logo"></li>
+          <li><a href="homepage.html">Accueil</a></li>
+          <li><a href="aspects-pratiques.html">Aspects pratiques</a></li>
+          <li><a href="a-propos-de-nous.html">A propos de nous</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li><a href="formulaire.html">Formulaire de parainage</a></li>
+          <li><a href="subventions.html">Subventions</a></li>
+        </ul>
+        <ul class="actions stacked">
+          <li>
+            <a href="programme.html" class="button primary fit" target="_blank"
+              >Programme</a
+            >
+          </li>
+          <li>
+            <a href="ticket.html" class="button fit">Acheter des tickets</a>
+          </li>
+        </ul>
+      </nav>
 
-                        <nav>
-                            <ul>
-                                <li><a href="homepage.html">Accueil</a></li>
-                                <li><span>Formulaire de parrainage</span></li>
-                            </ul>
-                        </nav>
+      <!-- Main -->
+      <div id="main" class="alt">
+        <!-- One -->
+        <section id="one">
+          <div class="inner">
+            <div id="breadcrumbs-exam">
+              <nav>
+                <ul>
+                  <li><a href="homepage.html">Accueil</a></li>
+                  <li><span>Formulaire de parrainage</span></li>
+                </ul>
+              </nav>
+            </div>
+            <header class="major">
+              <h1 class="font-bungee-tint-regular">Formulaire de parrainage</h1>
+            </header>
 
-                    </div>
-                    <header class="major">
-                        <h1 class="font-bungee-tint-regular">Formulaire de parrainage</h1>
-                    </header>
+            <form
+              method="post"
+              action="support.php"
+              id="sectionForm"
+              class="formulaire"
+            >
+              <div class="fields">
+                <!--FORMULAIRE SELECT-->
+                <div class="field">
+                  <label for="genre" class="display-none">Genre</label>
+                  <select id="genre" name="genre" required>
+                    <option value="">- Sélectionner -</option>
+                    <option value="f">Madame</option>
+                    <option value="h">Monsieur</option>
+                    <option value="x">Autre</option>
+                    <option value="prefereNePasDire">
+                      Je préfère ne pas le dire
+                    </option>
+                  </select>
+                </div>
 
-                    <form method="post" action="support.php" id="sectionForm" class="formulaire">
-						<div class="fields">
+                <!--FORMULAIRE NOM-->
+                <div class="field">
+                  <label for="surname" class="display-none"
+                    >Prénom du parrain/de la marraine:</label
+                  >
+                  <input
+                    type="text"
+                    id="surname"
+                    name="surname"
+                    value="Prénom"
+                    required
+                >
+                </div>
 
-                                        <!--FORMULAIRE SELECT-->
-                                        <div class="field">
-                                            <label for="genre">Genre</label>
-                                            <select id="genre" name="genre" required>
-                                                <option value="">- Sélectionner -</option>
-                                                <option value="f">Madame</option>
-                                                <option value="h">Monsieur</option>
-                                                <option value="x">Autre</option>
-                                                <option value="prefereNePasDire">Je préfère ne pas le dire</option>
-                                            </select>
-                                        </div>
+                <div class="field">
+                  <label for="name" class="display-none"
+                    >Nom du parrain/de la marraine:</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value="Nom"
+                    required
+                  >
+                </div>
 
+                <div class="field">
+                  <label for="email" class="display-none"
+                    >Adresse m/*666ail:</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value="Adresse-mail"
+                    required
+                  >
+                </div>
 
-                                        <!--FORMULAIRE NOM-->
-                                        <div class="field">
-                                            <label for="surname">Prénom du parrain/de la marraine:</label>
-                                            <input type="text" id="surname" name="surname" value="Prénom" required>
-                                        </div>
+                <!--FORMULAIRE RADIO-->
+                <div class="field">
+                  <label>Montant mensuel du soutien:</label>
 
-                                        <div class="field">
-                                            <label for="name">Nom du parrain/de la marraine:</label>
-                                            <input type="text" id="name" name="name" value="Nom" required>
-                                        </div>
+                  <input type="radio" id="cinq" name="montant" value="5">
+                  <label for="cinq">5€</label>
 
-                                        <div class="field">
-                                            <label for="email">Adresse mail:</label>
-                                            <input type="text" id="email" name="email" value="Adresse-mail" required>
-                                        </div>
+                  <input type="radio" id="quinze" name="montant" value="15">
+                  <label for="quinze">15€</label>
 
+                  <input type="radio" id="vingt" name="montant" value="20">
+                  <label for="vingt">20€</label>
+                </div>
 
-                                        <!--FORMULAIRE RADIO-->
-                                        <div class="field">
-                                            <label>Montant mensuel du soutien:</label>
-                                            <input type="radio" id="cinq" name="montant" value="5">
-                                            <label for="faible-montant">5€</label><br>
-                                            <input type="radio" id="quinze" name="montant" value="15">
-                                            <label for="average-montant">15€</label><br>
-                                            <input type="radio" id="vingt" name="montant" value="20">
-                                            <label for="eleve-montant">20€</label>
-                                        </div>
+                <!--FORMULAIRE CHECKBOX-->
+                <div class="field">
+                  <label>Orientation de la contribution:</label>
+                  <input
+                    type="checkbox"
+                    id="benevole"
+                    name="orientation"
+                    value="contribution-benevole"
+                  >
+                  <label for="benevole">Encadrement bénévole</label>
+                  <input
+                    type="checkbox"
+                    id="gestion"
+                    name="orientation"
+                    value="contribution-gestion"
+                  >
+                  <label for="gestion">Gestion des invités</label>
+                  <input
+                    type="checkbox"
+                    id="marketing"
+                    name="orientation"
+                    value="contribution-marketing"
+                  >
+                  <label for="marketing">Marketing et publicité</label>
+                  <input
+                    type="checkbox"
+                    id="selection"
+                    name="orientation"
+                    value="contribution-selection"
+                  >
+                  <label for="selection">Séléction des films/concerts</label>
+                </div>
 
+                <!--ZONE DE TEXTE MULTILIGNES-->
+                <div class="field">
+                  <label for="commentaire" class="display-none"
+                    >Commentaire</label
+                  >
+                  <textarea
+                    name="commentaire"
+                    id="commentaire"
+                    cols="60"
+                    rows="3"
+                  ></textarea>
+                </div>
 
-                                        <!--FORMULAIRE CHECKBOX-->
-                                        <div class="field">
-                                            <label>Orientation de la contribution:</label>
-                                            <input type="checkbox" id="benevole" name="orientation"
-                                                value="contribution-benevole">
-                                            <label for="benevole">Encadrement bénévole</label>
-                                            <input type="checkbox" id="gestion" name="orientation"
-                                                value="contribution-gestion">
-                                            <label for="gestion">Gestion des invités</label>
-                                            <input type="checkbox" id="marketing" name="orientation"
-                                                value="contribution-marketing">
-                                            <label for="marketing">Marketing et publicité</label>
-                                            <input type="checkbox" id="selection" name="orientation"
-                                                value="contribution-selection">
-                                            <label for="selection">Séléction des films/concerts</label>
-                                        </div>
+                <!--CONDITIONS GENERALES-->
+                <div class="field">
+                  <label for="conditions" class="display-none"
+                    >Accepter les conditions générales et la politique de
+                    confidencialité des données</label
+                  >
+                  <input
+                    type="checkbox"
+                    id="conditions"
+                    name="conditionsGenerales"
+                    value="ok"
+                    required
+                  >
+                  <label for="conditions" class="display-none">J'accepte</label>
+                </div>
+              </div>
 
-                                        <!--ZONE DE TEXTE MULTILIGNES-->
-                                        <div class="field">
-                                                    <label for="commentaire">Commentaire</label>
-                                                    <textarea name="commentaire" id="commentaire" cols="60" rows="3"></textarea>
-                                        </div>
+              <ul class="actions">
+                <li><input type="submit" value="Envoyer" class="primary" ></li>
+              </ul>
+            </form>
+          </div>
+        </section>
+      </div>
 
+    <!--FOOTER-->
 
-                                    <!--CONDITIONS GENERALES-->
-                                    <div class="field">
-                                        <label for="conditions">Accepter les conditions générales et la politique de
-                                        confidencialité des données</label>
-                                        <input type="checkbox" id="conditions" name="conditionsGenerales" value="ok" required>
-								        <label for="conditions">J'accepte</label>
-                                    </div>
-                                
-                        </div>
-
-                            <ul class="actions">
-							<li><input type="submit" value="Envoyer" class="primary"></li>
-						    </ul>
-		            </form>
-
-        </div>
-    </section>
-        </div>
-</div>
-</body>
-<!--FOOTER-->
-
-<footer id="footer">
-    <div class="inner">
+    <footer id="footer">
+      <div class="inner">
         <ul class="icons">
-            <li>
-                <a href="https://x.com/?lang=en" class="icon brands alt fa-twitter" target="_blank"><span
-                        class="label">Twitter</span></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/login/" class="icon brands alt fa-facebook-f" target="_blank"><span
-                        class="label">Facebook</span></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/" class="icon brands alt fa-instagram" target="_blank"><span
-                        class="label">Instagram</span></a>
-            </li>
-            <li>
-                <a href="https://github.com/VanyaYahya/WEB01-projet-festival" class="icon brands alt fa-github"
-                    target="_blank"><span class="label">GitHub</span></a>
-            </li>
-            <li>
-                <a href="https://be.linkedin.com/" class="icon brands alt fa-linkedin-in" target="_blank"><span
-                        class="label">LinkedIn</span></a>
-            </li>
-
+          <li>
+            <a
+              href="https://x.com/?lang=en"
+              class="icon brands alt fa-twitter"
+              target="_blank"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/login/"
+              class="icon brands alt fa-facebook-f"
+              target="_blank"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              class="icon brands alt fa-instagram"
+              target="_blank"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/VanyaYahya/WEB01-projet-festival"
+              class="icon brands alt fa-github"
+              target="_blank"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://be.linkedin.com/"
+              class="icon brands alt fa-linkedin-in"
+              target="_blank"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
         </ul>
         <div class="mentionsLegales">
-            <a href="mentions_legales.html" target="_blank">Mentions légales</a>
+          <a href="mentions_legales.html" target="_blank">Mentions légales</a>
         </div>
 
-
         <ul class="copyright">
-            <li>&copy; D. Charline</li>
-            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+          <li>&copy; D. Charline</li>
+          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
         </ul>
+      </div>
+    </footer>
     </div>
-</footer>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
