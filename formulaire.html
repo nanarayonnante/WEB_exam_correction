@@ -79,96 +79,96 @@
                         <h1 class="font-bungee-tint-regular">Formulaire de parrainage</h1>
                     </header>
 
-                    <!--ONE-->
-                    <div id="formulaire">
-                        <div class="inner">
-                            <div>
-                                <form method="post" action="#" id="sectionForm">
-                                    <div class="fields">
+                    <form method="post" action="support.php" id="sectionForm" class="formulaire">
+						<div class="fields">
 
                                         <!--FORMULAIRE SELECT-->
                                         <div class="field">
-                                            <h2>Genre</h2>
-                                            <label for="genre">Choississez un genre:</label>
+                                            <label for="genre">Genre</label>
                                             <select id="genre" name="genre" required>
-                                                <option value="1">Madame</option>
-                                                <option value="2">Monsieur</option>
-                                                <option value="3">Autre</option>
-                                                <option value="4">Je préfère ne pas le dire</option>
+                                                <option value="">- Sélectionner -</option>
+                                                <option value="madame">Madame</option>
+                                                <option value="monsieur">Monsieur</option>
+                                                <option value="autre">Autre</option>
+                                                <option value="prefereNePasDire">Je préfère ne pas le dire</option>
                                             </select>
                                         </div>
 
+
                                         <!--FORMULAIRE NOM-->
                                         <div class="field">
-                                            <h2>Références du parrain/de la marraine:</h2>
-                                            <label for="fname">Prénom:</label><br>
-                                            <input type="text" id="fname" name="fname" required><br>
-                                            <label for="lname">Nom:</label><br>
-                                            <input type="text" id="lname" name="lname"
-                                                oninvalid="alert('You must fill out the form!');"><br><br>
-                                            <label for="email">Adresse mail:</label><br>
-                                            <input type="text" id="email" name="email" required><br><br>
+                                            <label for="surname">Prénom du parrain/de la marraine:</label>
+                                            <input type="text" id="surname" name="surname" value="Prénom" required>
                                         </div>
+
+                                        <div class="field">
+                                            <label for="name">Nom du parrain/de la marraine:</label>
+                                            <input type="text" id="name" name="name" value="Nom" required
+                                                oninvalid="alert('You must fill out the form!');">
+                                        </div>
+
+                                        <div class="field">
+                                            <label for="email">Adresse mail:</label>
+                                            <input type="text" id="email" name="email" value="Adresse-mail" required>
+                                        </div>
+
 
                                         <!--FORMULAIRE RADIO-->
                                         <div class="field">
-                                            <h2>Montant mensuel du soutien:</h2>
-                                            <input type="radio" id="amount1" name="amount" value="5€">
-                                            <label for="amount1">5€</label><br>
-                                            <input type="radio" id="amount2" name="amount" value="15€">
-                                            <label for="amount2">15€</label><br>
-                                            <input type="radio" id="amount3" name="amount" value="20€">
-                                            <label for="amount3">20€</label>
+                                            <label>Montant mensuel du soutien:</label>
+                                            <input type="radio" id="cinq" name="faible-montant" value="5">
+                                            <label for="cinq">5€</label><br>
+                                            <input type="radio" id="quinze" name="average-montant" value="15">
+                                            <label for="quinze">15€</label><br>
+                                            <input type="radio" id="vingt" name="eleve-montant" value="20">
+                                            <label for="vingt">20€</label>
                                         </div>
+
+
                                         <!--FORMULAIRE CHECKBOX-->
                                         <div class="field">
-                                            <h2>Orientation de la contribution:</h2>
-                                            <input type="checkbox" id="orientation1" name="orientation1"
-                                                value="Encadrement bénévole">
-                                            <label for="orientation1">Encadrement bénévole</label><br>
-                                            <input type="checkbox" id="orientation2" name="orientation2"
-                                                value="Gestion des invités">
-                                            <label for="orientation">Gestion des invités</label><br>
-                                            <input type="checkbox" id="orientation3" name="orientation3"
-                                                value="Marketing et publicité">
-                                            <label for="orientation3">Marketing et publicité</label><br>
-                                            <input type="checkbox" id="orientation4" name="orientation4"
-                                                value="Séléction des films/concerts">
-                                            <label for="orientation4">Séléction des
-                                                films/concerts</label><br><br>
+                                            <label>Orientation de la contribution:</label>
+                                            <input type="checkbox" id="benevole" name="orientation"
+                                                value="contribution-benevole">
+                                            <label for="benevole">Encadrement bénévole</label>
+                                            <input type="checkbox" id="gestion" name="orientation"
+                                                value="contribution-gestion">
+                                            <label for="gestion">Gestion des invités</label>
+                                            <input type="checkbox" id="marketing" name="orientation"
+                                                value="contribution-marketing">
+                                            <label for="marketing">Marketing et publicité</label>
+                                            <input type="checkbox" id="selection" name="orientation"
+                                                value="contribution-selection">
+                                            <label for="selection">Séléction des films/concerts</label>
                                         </div>
 
                                         <!--ZONE DE TEXTE MULTILIGNES-->
                                         <div class="field">
-                                            <div class="fields">
-                                                <div class="field">
-                                                    <label for="message">Commentaire</label>
-                                                    <textarea name="message" id="message" rows="6"></textarea>
-                                                </div>
-                                            </div>
+                                                    <label for="commentaire">Commentaire</label>
+                                                    <textarea name="commentaire" id="commentaire" rows="3"></textarea>
                                         </div>
-                                    </div>
+
+
                                     <!--CONDITIONS GENERALES-->
                                     <div class="field">
-                                        <input type="checkbox" id="conditions" name="conditions"
-                                            value="Conditions générales" required>
-                                        <label for="conditions">J'accepte les conditions générales et la
-                                            politique de
-                                            confidencialité des données</label><br><br>
+                                        <label for="conditions">Accepter les conditions générales et la politique de
+                                        confidencialité des données</label>
+                                        <input type="checkbox" id="conditions" name="conditionsGenerales" value="ok" required>
+								        <label for="conditions">J'accepte</label>
                                     </div>
-
-                                    <!--ENVOYER-->
-                                    <ul class="actions">
-                                        <li><input type="submit" value="Envoyer" class="primary"></li>
-                                    </ul>
-                                </form>
-                            </div>
+                                
                         </div>
-                    </div>
-                </div>
-            </section>
+
+                            <ul class="actions">
+							<li><input type="submit" value="Envoyer" class="primary"></li>
+						    </ul>
+		            </form>
+
         </div>
-    </div>
+    </section>
+</div>
+ 
+
 </body>
 <!--FOOTER-->
 
